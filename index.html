@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Venkatesan — Portfolio</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Theme color for mobile -->
+  <meta name="theme-color" content="#0f1724">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">V</div>
+      <div class="brand-text">
+        <span class="name">Venkatesan</span>
+        <span class="role">Aspirant Software Developer & Designer</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeToggle" aria-label="Toggle theme">🌗</button>
+      <button id="resumeBtn" class="btn-outline">Resume</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-card glass">
+        <div class="hero-left">
+          <h1>Hi, I’m <span class="accent">Venkatesan</span></h1>
+          <p class="lead">
+            I build beautiful and performant web apps. Passionate about UI/UX, JavaScript, and turning ideas into products.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn-primary" href="#skills">See My Skills</a>
+            <a class="btn-ghost" href="mailto:venkatesan@example.com">Hire Me</a>
+          </div>
+
+          <div class="socials">
+            <!-- replace # with actual links -->
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="avatar glass-avatar">
+            <!-- replace with image if available -->
+            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="1" y="1" width="22" height="22" rx="6" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M7 15c1.5-2 8-2 9 0" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              <circle cx="12" cy="9" r="2" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </div>
+
+          <ul class="stats">
+            <li><strong>1</strong><span>Years Experience</span></li>
+            <li><strong>100%</strong><span>Committed</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="section-inner glass">
+        <h2>About</h2>
+        <p>
+          I'm Venkatesan — a web developer who loves clean interfaces, fast apps, and delightful micro-interactions.
+          I focus on frontend engineering (React / vanilla JS), creative code, and product thinking.
+        </p>
+
+        <div class="about-grid">
+          <div>
+            <h3>What I do</h3>
+            <ul>
+              <li>Frontend development (React, Typescript, HTML/CSS)</li>
+              <li>UI design & prototyping</li>
+              <li>Performance & accessibility</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Tools</h3>
+            <ul>
+              <li>VS Code • Git • Chrome DevTools</li>
+              <li>Figma • Blender (basic) • After Effects (basic)</li>
+              <li>Node.js • Vite • Webpack</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="section-inner">
+        <h2>Skills</h2>
+
+        <div class="skills-grid glass">
+          <!-- Edit skill name and percent -->
+          <div class="skill">
+            <div class="skill-head">
+              <span>JavaScript</span><span>90%</span>
+            </div>
+            <div class="bar">
+              <div class="fill" style="width:90%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>React</span><span>85%</span>
+            </div>
+            <div class="bar">
+              <div class="fill" style="width:85%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>HTML & CSS</span><span>95%</span>
+            </div>
+            <div class="bar">
+              <div class="fill" style="width:95%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>UI / Product</span><span>80%</span>
+            </div>
+            <div class="bar">
+              <div class="fill" style="width:80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="section-inner glass">
+        <h2>Contact</h2>
+        <p>If you want to collaborate or hire me — let's talk.</p>
+
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <textarea name="message" rows="6" placeholder="Message"></textarea>
+
+          <div class="form-actions">
+            <button id="sendBtn" class="btn-primary">Send</button>
+            <a class="btn-ghost" href="mailto:venkatesan@example.com">Or email directly</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>© <span id="year"></span> Venkatesan — Built with ❤️</small>
+    </footer>
+  </main>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
